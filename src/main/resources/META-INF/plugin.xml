@@ -16,4 +16,11 @@
         <listener class="com.github.jamesfchen.modulemanager.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+<!--    <actions>-->
+<!--        &lt;!&ndash; Add your actions here &ndash;&gt;-->
+<!--        <action id="module-manager" class="com.github.jamesfchen.MyAction" text="模块管理" description="鼠标驻留时显示">-->
+<!--            <add-to-group group-id="ToolsMenu" anchor="last"/>-->
+<!--            <keyboard-shortcut keymap="$default" first-keystroke="alt s"/>-->
+<!--        </action>-->
+<!--    </actions>-->
 </idea-plugin>
