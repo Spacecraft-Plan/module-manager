@@ -1,4 +1,4 @@
-package com.github.jamesfchen.modulemanager
+package com.jamesfchen.modulemanager
 
 import com.intellij.AbstractBundle
 import org.jetbrains.annotations.NonNls

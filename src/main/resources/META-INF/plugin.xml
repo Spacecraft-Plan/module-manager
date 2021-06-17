@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>com.github.jamesfchen.modulemanager</id>
+    <id>com.jamesfchen.modulemanager</id>
     <name>module-manager</name>
     <vendor>jamesfchen</vendor>
 
@@ -8,19 +8,12 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.jamesfchen.modulemanager.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.jamesfchen.modulemanager.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.jamesfchen.modulemanager.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.jamesfchen.modulemanager.services.MyProjectService"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.jamesfchen.modulemanager.listeners.MyProjectManagerListener"
+        <listener class="com.jamesfchen.modulemanager.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
-<!--    <actions>-->
-<!--        &lt;!&ndash; Add your actions here &ndash;&gt;-->
-<!--        <action id="module-manager" class="com.github.jamesfchen.MyAction" text="模块管理" description="鼠标驻留时显示">-->
-<!--            <add-to-group group-id="ToolsMenu" anchor="last"/>-->
-<!--            <keyboard-shortcut keymap="$default" first-keystroke="alt s"/>-->
-<!--        </action>-->
-<!--    </actions>-->
 </idea-plugin>

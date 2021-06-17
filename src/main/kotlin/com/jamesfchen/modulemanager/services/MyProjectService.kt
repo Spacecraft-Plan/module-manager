@@ -1,6 +1,6 @@
-package com.github.jamesfchen.modulemanager.services
+package com.jamesfchen.modulemanager.services
 
-import com.github.jamesfchen.modulemanager.MyBundle
+import com.jamesfchen.modulemanager.MyBundle
 import com.intellij.openapi.project.Project
 
 class MyProjectService(project: Project) {
