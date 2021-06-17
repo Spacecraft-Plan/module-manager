@@ -1,6 +1,6 @@
-package com.jamesfchen.modulemanager.listeners
+package com.jamesfchen.manager.listeners
 
-import com.jamesfchen.modulemanager.services.MyProjectService
+import com.jamesfchen.manager.services.MyProjectService
 import com.intellij.openapi.components.service
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.project.ProjectManagerListener

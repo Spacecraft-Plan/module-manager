@@ -1,10 +1,11 @@
 <idea-plugin>
-    <id>com.jamesfchen.modulemanager</id>
-    <name>module-manager</name>
+    <id>com.jamesfchen.manager.modulemanager</id>
+    <name>ModuleManager</name>
     <vendor>jamesfchen</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
@@ -16,4 +17,12 @@
         <listener class="com.jamesfchen.modulemanager.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.jamesfchen.manager.MyAction" class="com.jamesfchen.manager.MyAction"
+                icon="/META-INF/pluginIcon_16.svg"
+                text="module manager action" description="Haha">
+<!--            <add-to-group group-id="ToolsMenu" anchor="last"/>-->
+<!--            <add-to-group group-id="MainToolBar" anchor="last"/>-->
+        </action>
+    </actions>
 </idea-plugin>

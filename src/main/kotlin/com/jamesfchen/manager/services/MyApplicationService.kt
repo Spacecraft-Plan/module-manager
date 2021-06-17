@@ -1,6 +1,6 @@
-package com.jamesfchen.modulemanager.services
+package com.jamesfchen.manager.services
 
-import com.jamesfchen.modulemanager.MyBundle
+import com.jamesfchen.manager.MyBundle
 
 class MyApplicationService {
 
